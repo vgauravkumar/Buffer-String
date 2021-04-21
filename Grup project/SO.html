@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="Css/styles.css">
+    <style>
+        body {
+            background: url('img/hd-abstract-border-designs-png-abstract-border-design-png-abstract-design-png-1224_746.png');
+            background-repeat: repeat;
+            background-size: contain;
+        }
+    </style>
+</head>
+
+<body>
+    <table align="center">
+        <tr>
+            <td>
+                <p><b>Program to reverse string using string builder<b></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <textarea id="fb" rows="17" cols="100" readonly>
+import java.lang.*;
+import java.io.*;
+import java.util.*;
+class Main
+{
+  public static void main(String[] args)
+  {
+    System.out.println("Enter a string to reverse : ");
+    Scanner sc=new Scanner(System.in);
+    String input = sc.nextLine();
+    StringBuilder input1 = new StringBuilder();
+    input1.append(input);
+    input1.reverse();
+    System.out.println("Reversed String is : "+input1);
+  }
+}
+</textarea>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><b>Output:</b></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <textarea id="fb" rows="3" cols="39" readonly>Enter a string to reverse :i love coding&#013Reversed String is : gnidoc evol i 
+              </textarea>
+            </td>
+          </tr>
+            <td>
+                <p><b>Program to find repeated words<b></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <textarea id="fb" rows="29" cols="100" readonly>
+import java.util.*;
+public class Main
+{  
+  public static void main(String[] args)
+  {  
+    System.out.println("Enter sentence containing single spaces within words : ");
+    Scanner sc=new Scanner(System.in);
+    String s1=sc.nextLine();  
+    int c;  
+    s1=s1.toUpperCase();  
+    String w[] = s1.split(" ");  
+    System.out.println("Repeated words: ");   
+    for(int i=0;i<w.length;i++)
+    {  
+      c=1;  
+      for(int j=i+1;j<w.length;j++)
+      {  
+        if(w[i].equals(w[j]))
+        {  
+         c++;  
+         w[j]="0";  
+        }  
+       }
+      if(c>1&&w[i]!="0")  
+      System.out.println(w[i]);  
+    }  
+   }  
+}  
+</textarea>
+            </td>
+        </tr>
+        <tr>
+          <td>
+            <p><b>Output:</b></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <textarea id="fb" rows="5" cols="79" readonly>Enter sentence containing single spaces within words :i went went to to school&#013Repeated words:&#013WENT&#013TO 
+            </textarea>
+          </td>
+        </tr>
+        <tr>
+            <td>
+                <p><b>Program to convert first letter of every word to uppercase<b></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <textarea id="fb" rows="32" cols="100" readonly>
+import java.util.*;
+public class Main
+{
+ public static void main(String[] args) 
+ {
+   System.out.println("Enter String : ");
+   Scanner sc=new Scanner(System.in);
+   String s1=sc.nextLine();
+   String s2=s1.trim().replaceAll(" +"," ");
+   int l=s2.length();
+   boolean check=true;
+   StringBuilder s3=new StringBuilder(s2);
+   for(int i=0;i<l;i++)
+   {
+     char c=s2.charAt(i);
+     if(Character.isLetter(c))
+     {
+       if(check)
+       {
+        c=Character.toUpperCase(c);
+        s3.setCharAt(i,c);
+        check=false;
+       } 
+     }
+     else
+     check=true;
+    }
+   s2=s3.toString();
+   System.out.println("Converting Starting Letters to uppercase : "+s2);
+  }
+}
+</textarea>
+            </td>
+        </tr>
+        <tr>
+          <td>
+            <p><b>Output:</b></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <textarea id="fb" rows="3" cols="57" readonly>Enter String :i live in india&#013Converting Starting Letters to uppercase : I Live In India
+            </textarea>
+          </td>
+        </tr>
+        <tr>
+            <td>
+                <p><b>Program to sort words in a string lexicographically<b></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <textarea id="fb" rows="31" cols="100" readonly>
+import java.util.*;
+public class Main
+{
+  public static void main(String[] args) 
+  {
+    System.out.println("Enter a sentence : ");
+    Scanner sc=new Scanner(System.in);
+    String s1=sc.nextLine();
+    String s2=s1.trim().replaceAll(" +"," ");
+    String[] s3=s2.split(" ");
+    int l=s3.length;
+    for(int i=0;i<l-1;i++)
+    {
+      for (int j=i+1;j<l;j++)
+      {
+        if (s3[i].compareTo(s3[j])>0) 
+        {
+          String temp=s3[i];
+          s3[i]=s3[j];
+          s3[j]=temp;
+        }
+      }
+    }
+    System.out.println("Lexicographically words are :");
+    for(int i=0;i<l;i++) 
+    {
+        System.out.println(s3[i]);
+    }
+  }
+}
+</textarea>
+            </td>
+        </tr>
+        <tr>
+          <td>
+            <p><b>Output:</b></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <textarea id="fb" rows="7" cols="32" readonly>Enter a sentence :i live in india&#013Lexicographically words are :&#013i&#013in&#013india&#013live
+            </textarea>
+          </td>
+        </tr>
+        </table>
+</body>
+</html>

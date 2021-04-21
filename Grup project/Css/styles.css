@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+h1{
+  font-family:verdana;color:black
+}
+h2{
+  font-family:verdana;color:#6ee619
+}
+p{
+  font-family: 'Questrial', sans-serif;
+  font-size:160%;
+  color:black;
+  margin-left: 36px;
+}
+textarea{
+  font-size: large;
+  color: #cecec7;
+  background-color: rgb(32, 30, 30);
+  margin-bottom: 50px;
+  margin-left: 38px;
+  resize: none;
+  box-shadow: 5px 5px 15px black;
+  border: none;
+  outline: 0;
+}

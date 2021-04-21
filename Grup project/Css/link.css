@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+     background-image: linear-gradient(to bottom,rgba(0,255,170,0.562),rgb(0,255,104));
+     background-size: cover;
+     background-repeat: no-repeat;
+     height: 100vh;
+     overflow: hidden;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+a{
+    text-decoration: none;
+    color : #343434;
+    font-family: 'Yusei Magic', sans-serif;
+    margin: 20px;
+    padding: 10px;
+    font-size: 20px;
+    transition: all;
+}
+a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+    transition-delay: 100ms;
+    transition-timing-function: ease-in-out;
+    transition: background-color 150ms linear;
+}
+a:focus{
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+}
+#link1:hover + .select{
+    background-color: white;
+  transition: background-color 150ms linear;  
+}
+#link2:hover + .select1{
+    background-color: white;
+    transition: background-color 150ms linear;  
+}
+#link3:hover + .select2{
+    background-color: white;
+    transition: background-color 150ms linear;  
+}
+#link4:hover + .select3{
+    background-color: white;
+    transition: background-color 150ms linear;  
+}
+#link5:hover + .select4{
+    background-color: white;
+    transition: background-color 150ms linear;  
+}
+
+#link1:focus + .select{
+    background-color: white;
+}
+#link2:focus + .select1{
+    background-color: white;
+}
+#link3:focus + .select2{
+    background-color: white;
+}
+#link4:focus + .select3{
+    background-color: white;
+}
+#link5:focus + .select4{
+    background-color: white;
+}
+.select{
+    height: 49px;
+    width: 120px;
+    position: absolute;
+    color: transparent;
+    margin: 20px 268px;
+    z-index: -1;
+    top: 100px;
+    right: -268px;
+    transition: all;
+}
+.select1{
+    height: 48px;
+    width: 140px;
+    color: transparent;
+    position: absolute;
+    margin: 107px 248px;
+    z-index: -1;
+    top: 102px;
+    right: -251px;
+    transition: all;
+}
+.select2{
+    height: 49px;
+    width: 124px;
+    color: transparent;
+    position: absolute;
+    margin: 194px 264px;
+    z-index: -1;
+    top: 103px;
+    right: -269px;
+    transition: all;
+}
+.select3{
+    height: 49px;
+    width: 120px;
+    color: transparent;
+    position: absolute;
+    margin: 281px 268px;
+    z-index: -1;
+    top: 105px;
+    right: -268px;
+    transition: all;
+}
+.select4{
+    height: 49px;
+    width: 160px;
+    color: transparent;
+    position: absolute;
+    margin: 369px 228px;
+    z-index: -1;
+    top: 106px;
+    right: -229px;
+    transition: all;
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="Css/styles.css">
+    <style>
+        body {
+            background: url('img/hd-abstract-border-designs-png-abstract-border-design-png-abstract-design-png-1224_746.png');
+            background-repeat: repeat;
+            background-size: contain;
+        }
+    </style>
+</head>
+
+<body>
+    <table align="center">
+        <tr>
+            <td>
+                <p><b>Program to demonstrate joining of 2 strings<b></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <textarea id="fb" rows="13" cols="100" readonly>
+class Main 
+{
+  public static void main(String[] args) 
+  {
+    String first = "Java ";
+    System.out.println("First String: " + first);
+    String second = "Programming";
+    System.out.println("Second String: " + second);
+    String joinedString = first.concat(second);
+    System.out.println("Joined String: " + joinedString);
+  }
+}        
+</textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <p><b>Output:</b></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <textarea id="fb" rows="4" cols="30" readonly>First String: Java &#013Second String: Programming&#013Joined String: Java Programming
+              </textarea>
+            </td>
+          </tr>
+            <td>
+                <p><b>Program to demonstrate comparison of 2 strings<b></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <textarea id="fb" rows="14" cols="100" readonly>
+class Main 
+{
+  public static void main(String[] args) 
+  {
+    String first = "java programming";
+    String second = "java programming";
+    String third = "python programming";
+    boolean result1 = first.equals(second);
+    System.out.println("Strings first and second are equal: " + result1);
+    boolean result2 = first.equals(third);
+    System.out.println("Strings first and third are equal: " + result2);
+  }
+}
+</textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <p><b>Output:</b></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <textarea id="fb" rows="3" cols="40" readonly>Strings first and second are equal: true&#013Strings first and third are equal: false
+              </textarea>
+            </td>
+          </tr>
+        <tr>
+            <td>
+                <p><b>program to demonstrate finding first occurence of a word using indexof<b></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <textarea id="fb" rows="15" cols="100" readonly>
+import java.util.*;
+public class Main
+{
+  public static void main(String[] args) 
+  {
+    System.out.println("Enter String : ");
+    Scanner sc=new Scanner(System.in);
+    String s1=sc.nextLine();
+    System.out.println("Enter Word : ");
+    String s2=sc.nextLine();
+    int i=s1.indexOf(s2,0);
+    System.out.println("First Occurence at "+(i+1)+" position.");
+  }
+}
+</textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <p><b>Output:</b></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <textarea id="fb" rows="4" cols="29" readonly>Enter String:I live in india&#013Enter Word:in&#013First Occurence at 8 position.
+              </textarea>
+            </td>
+          </tr>
+        <tr>
+            <td>
+                <p><b>Program to remove multiple whitespaces<b></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <textarea id="fb" rows="13" cols="100" readonly>
+import java.util.*;
+public class Main
+{
+  public static void main(String[] args) 
+  {
+    System.out.println("Enter String : ");
+    Scanner sc=new Scanner(System.in);
+    String s1=sc.nextLine();
+    String s2=s1.trim().replaceAll(" +"," ");
+    System.out.println("After removing consecutive whitespaces : "+s2);
+  }
+}
+</textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <p><b>Output:</b></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <textarea id="fb" rows="3" cols="55" readonly>Enter String :I       live    in   india&#013After removing consecutive whitespaces : I live in india
+              </textarea>
+            </td>
+          </tr>
+    </table>
+</body>
+
+</html>

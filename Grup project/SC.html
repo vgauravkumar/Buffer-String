@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="Css/styles.css">
+    <style>
+        body {
+            background: url('img/hd-abstract-border-designs-png-abstract-border-design-png-abstract-design-png-1224_746.png');
+            background-repeat: repeat;
+            background-size: contain;
+        }
+    </style>
+</head>
+
+<body>
+    <table align="center">
+        <tr>
+            <td>
+                <p><b>Program to demonstrate use of string constructor to create string from character array<b></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <textarea id="fb" rows="10" cols="100" readonly>
+public class Main
+{
+  public static void main(String[] args) 
+  {
+    char char_arr[] = {'J','a','v','a',' ','P','r','o','g','r','a','m','s'};
+    String s = new String(char_arr);
+    System.out.println(s);
+  }
+}                  
+</textarea>
+            </td>
+        </tr>
+        <tr>
+          <td>
+            <p><b>Output:</b></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <textarea id="fb" rows="2" cols="17" readonly>Java Programs
+            </textarea>
+          </td>
+        </tr>
+        <tr>
+            <td>
+                <p><b>Program to construct string from byte array<b></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <textarea id="fb" rows="10" cols="100" readonly>
+public class Main
+{
+  public static void main(String[] args) 
+  {
+    byte[] arr = {74,97,118,97};
+    String s = new String(arr);
+    System.out.println(s);
+  }
+}                
+</textarea>
+            </td>
+        </tr>
+        <tr>
+          <td>
+            <p><b>Output:</b></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <textarea id="fb" rows="2" cols="17" readonly>Java
+            </textarea>
+          </td>
+        </tr>
+        <tr>
+            <td>
+                <p><b>Program to construct string from byte array using charset for decoding<b></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <textarea id="fb" rows="12" cols="100" readonly>
+import java.nio.charset.Charset;
+public class Main
+{
+  public static void main(String[] args) 
+  {
+    byte[] arr = {74,97,118,97};
+    Charset cs = Charset.defaultCharset();
+    String str = new String(arr, cs);
+    System.out.println(str);
+  }
+}
+</textarea>
+            </td>
+        </tr>
+        <tr>
+          <td>
+            <p><b>Output:</b></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <textarea id="fb" rows="2" cols="17" readonly>Java
+            </textarea>
+          </td>
+        </tr>
+        <tr>
+            <td>
+                <p><b>Program to demonstrate use of string cosntructor to make substring<b></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <textarea id="fb" rows="15" cols="100" readonly>
+public class Main
+{
+  public static void main(String[] args) 
+  {
+    String s1="Java Programs";
+    char[] ch = new char[s1.length()];
+    for (int i = 0; i < s1.length(); i++) 
+    {
+      ch[i] = s1.charAt(i);
+    }
+    String s2=new String(ch,0,6);
+    System.out.println(s2);
+  }
+}
+</textarea>
+            </td>
+        </tr>
+        <tr>
+          <td>
+            <p><b>Output:</b></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <textarea id="fb" rows="2" cols="17" readonly>Java P
+            </textarea>
+          </td>
+        </tr>
+    </table>
+</body>
+
+</html>

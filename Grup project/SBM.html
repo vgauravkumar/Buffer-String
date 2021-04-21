@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="Css/styles.css">
+    <style>
+        body {
+            background: url('img/hd-abstract-border-designs-png-abstract-border-design-png-abstract-design-png-1224_746.png');
+            background-repeat: repeat;
+            background-size: contain;
+        }
+    </style>
+</head>
+<body>
+    <table align="center">
+        <tr>
+            <td>
+                <p><b>Program to insert words in a string one by one using string buffer<b></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <textarea id="fb" rows="26" cols="100" readonly>
+import java.util.*;
+public class Main
+{
+  public static void main(String[] args)
+  {
+    Scanner sc=new Scanner(System.in);
+    StringBuffer s2=new StringBuffer();
+    boolean check=true;
+    while(check)
+    {
+      System.out.println("Enter Word(1) or End(2) : ");
+      int c=sc.nextInt();
+      sc.nextLine();
+      if(c==1)
+      {
+        System.out.println("Enter Word : ");
+        String s1=sc.nextLine();
+        s2.append(s1);
+      }
+      else if(c==2)
+      check=false;
+    }
+    System.out.println("Final Sentence is : "+s2.toString());
+   }
+}
+</textarea>
+            </td>
+            </tr>
+            <tr>
+                <td>
+                  <p><b>Output:</b></p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <textarea id="fb" rows="11" cols="30" readonly>Enter Word(1) or End(2) :1&#013Enter Word:I&#013Enter Word(1) or End(2) :1&#013Enter Word :live&#013Enter Word(1) or End(2) :1&#013Enter Word :in&#013Enter Word(1) or End(2) :1&#013Enter Word :india&#013Enter Word(1) or End(2) :2&#013Final Sentence is :Iliveinindia
+                  </textarea>
+                </td>
+              </tr>
+        <tr>
+            <td>
+                <p><b>Program to reverse string using string buffer<b></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <textarea id="fb" rows="17" cols="100" readonly>
+import java.lang.*;
+import java.io.*;
+import java.util.*;
+class Main
+{
+  public static void main(String[] args)
+  {
+    System.out.println("Enter a string to reverse : ");
+    Scanner sc=new Scanner(System.in);
+    String s1=sc.nextLine();
+    StringBuffer s2=new StringBuffer();
+    s2.append(s1);
+    s2.reverse();
+    System.out.println("Reversed String is : "+s2.toString());
+   }
+}
+</textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <p><b>Output:</b></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <textarea id="fb" rows="3" cols="41" readonly>Enter a string to reverse :I live in india&#013Reversed String is : aidni ni evil I
+              </textarea>
+            </td>
+          </tr>
+        <tr>
+            <td>
+                <p><b>Program to delete a part of a sentence<b></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <textarea id="fb" rows="19" cols="100" readonly>
+import java.util.*;
+public class Main
+{
+  public static void main(String[] args)
+  {
+    System.out.println("Enter sentence : ");
+    Scanner sc=new Scanner(System.in);
+    String s1=sc.nextLine();
+    StringBuffer s2=new StringBuffer();
+    s2.append(s1);
+    System.out.println("Enter start and end point deletion : ");
+    int b=sc.nextInt();
+    b--;
+    int e=sc.nextInt();
+    s2.delete(b,e);
+    System.out.println("Sentence after editing : "+s2.toString());
+  }
+}          
+</textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <p><b>Output:</b></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <textarea id="fb" rows="6" cols="35" readonly>Enter sentence :i live in india&#013Enter start and end deletion :&#013 2&#013 5&#013Sentence after editing : ie in india
+              </textarea>
+            </td>
+          </tr>
+        <tr>
+            <td>
+                <p><b>Program to demonstrate change in capacity of string buffer<b></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <textarea id="fb" rows="14" cols="100" readonly>
+import java.util.*;
+public class Main
+{
+  public static void main(String[] args)
+  {
+    String s1="Java Programmimg";
+    StringBuffer s2=new StringBuffer();
+    s2.append(s1);
+    StringBuffer s3=new StringBuffer("Java Programming");
+    System.out.println("Appending string to string buffer default capacity : "+s2.capacity());
+    System.out.println("Capacity when constructing string buffer : "+s3.capacity());
+  }
+}
+</textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <p><b>Output:</b></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <textarea id="fb" rows="3" cols="54" readonly>Appending string to string buffer default capacity : 16&#013Capacity when constructing string buffer : 32 
+              </textarea>
+            </td>
+          </tr>
+    </table>  
+</body>
+
+</html>
